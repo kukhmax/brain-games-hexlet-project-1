@@ -4,6 +4,5 @@
 [![Python CI](https://github.com/kukhmax/python-project-lvl1/actions/workflows/python-package.yml/badge.svg)](https://github.com/kukhmax/python-project-lvl1/actions/workflows/python-package.yml)
 
 
-h[![asciicast](https://asciinema.org/a/kyt90WJImK7Fpgz6tRkqb10kf.svg)](https://asciinema.org/a/kyt90WJImK7Fpgz6tRkqb10kf)
-=======
->>>>>>> Update README.md
+[![asciicast](https://asciinema.org/a/kyt90WJImK7Fpgz6tRkqb10kf.svg)](https://asciinema.org/a/kyt90WJImK7Fpgz6tRkqb10kf)
+
