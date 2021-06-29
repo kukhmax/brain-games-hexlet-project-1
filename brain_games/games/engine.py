@@ -12,6 +12,7 @@ def is_gcd(a, b):
             b = b - a
     return b
 
+
 def uncor(a, b, c):
     print("""'{}' is wrong answer ;(. Correct answer was '{}'.
 Let's try again, {}!""".format(a, b, c))
