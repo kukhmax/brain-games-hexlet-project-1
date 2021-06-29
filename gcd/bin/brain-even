@@ -1,0 +1,5 @@
+#!/home/maks/python-project-lvl1/gcd/bin/python
+from brain_games.scripts.brain_even import main
+
+if __name__ == '__main__':
+    main()

@@ -2,10 +2,12 @@
 
 import prompt
 import random
+from brain_games.games.engine import welcome_user
+from brain_games.games.engine import uncor
 
 
 def calc():
-    print('Welcome to the Brain Games')
+    welcome_user()
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
     print('What is the result of the expression?')
@@ -26,13 +28,10 @@ def calc():
             i += 1
         else:
             if ans != add and sing == '+':
-                result = print("""'{}' is wrong answer ;(. Correct answer was '{}'.
-Let's try again, {}!""".format(ans, add, name))
+                result = uncor(ans, add, name)
             elif ans != sub and sing == '-':
-                result = print("""'{}' is wrong answer ;(. Correct answer was '{}'.
-Let's try again, {}!""".format(ans, sub, name))
+                result = uncor(ans, sub, name)
             elif ans != mul and sing == '*':
-                result = print("""'{}' is wrong answer ;(. Correct answer was '{}'.
-Let's try again, {}!""".format(ans, mul, name))
+                result = uncor(ans, mul, name)
             return result
     print('Congratulations, {}!'.format(name))
