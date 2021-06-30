@@ -4,6 +4,7 @@ import prompt
 import random
 from brain_games.games.engine import welcome_user
 from brain_games.games.engine import uncor
+from brain_games.games.engine import congratulations
 
 
 def calc():
@@ -34,4 +35,4 @@ def calc():
             elif ans != mul and sing == '*':
                 result = uncor(ans, mul, name)
             return result
-    print('Congratulations, {}!'.format(name))
+    congratulations(name)

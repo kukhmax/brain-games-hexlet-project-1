@@ -2,25 +2,27 @@
 
 import prompt
 import random
-from brain_games.games.engine import is_gcd
 from brain_games.games.engine import welcome_user
+from brain_games.games.engine import progression
 from brain_games.games.engine import uncor
 from brain_games.games.engine import congratulations
 
 
-def gcd():
+def get_missing_number_in_progression():
     welcome_user()
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
-    print('Find the greatest common divisor of given numbers.')
-
+    print('What number is missing in the progression?')
     i = 0
-    while i <= 2:
-        num_1 = random.randint(1, 99)
-        num_2 = random.randint(1, 99)
-        print('Question: {} {}'.format(num_1, num_2))
+
+    while i < 3:
+        num = random.randint(1, 9)
+        num_1 = random.randint(0, 9)
+        count = random.randint(2, 6)
+        prog = progression(num, count, num_1, 2)
+        print('Question: {}'.format(prog))
         ans = prompt.integer('Your answer: ')
-        cor_ans = is_gcd(num_1, num_2)
+        cor_ans = progression(num, count, num_1, 1)
         if ans == cor_ans:
             print('Correct!')
             i += 1
