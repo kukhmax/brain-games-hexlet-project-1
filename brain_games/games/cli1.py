@@ -1,7 +1,7 @@
 import prompt
 import random
 from brain_games.games.engine import welcome_user
-from brain_games.games.engine import uncor
+from brain_games.games.engine import incor
 from brain_games.games.engine import congratulations
 
 
@@ -23,8 +23,8 @@ def is_even():
             i += 1
         else:
             if rand % 2 == 0 and ans != 'yes':
-                wrong = uncor(ans, yes, name)
+                wrong = incor(ans, yes, name)
             elif rand % 2 == 1 and ans != 'no':
-                wrong = uncor(ans, no, name)
+                wrong = incor(ans, no, name)
             return wrong
     congratulations(name)

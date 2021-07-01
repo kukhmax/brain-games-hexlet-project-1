@@ -30,7 +30,20 @@ def progression(a, count, b, c):
         return result
 
 
-def uncor(a, b, c):
+def prime(a):
+    i = 2
+    if a < 2:
+        return 'no'
+    while i < a:
+        b = a % i
+        if b != 0:
+            i += 1
+        else:
+            return 'no'
+    return 'yes'
+
+
+def incor(a, b, c):
     print("""'{}' is wrong answer ;(. Correct answer was '{}'.
 Let's try again, {}!""".format(a, b, c))
 

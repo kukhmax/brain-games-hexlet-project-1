@@ -3,7 +3,7 @@
 import prompt
 import random
 from brain_games.games.engine import welcome_user
-from brain_games.games.engine import uncor
+from brain_games.games.engine import incor
 from brain_games.games.engine import congratulations
 
 
@@ -29,10 +29,10 @@ def calc():
             i += 1
         else:
             if ans != add and sing == '+':
-                result = uncor(ans, add, name)
+                result = incor(ans, add, name)
             elif ans != sub and sing == '-':
-                result = uncor(ans, sub, name)
+                result = incor(ans, sub, name)
             elif ans != mul and sing == '*':
-                result = uncor(ans, mul, name)
+                result = incor(ans, mul, name)
             return result
     congratulations(name)
