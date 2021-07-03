@@ -15,8 +15,8 @@ def get_result_of_calc():
     i = 0
 
     while i <= 2:
-        num_1 = random.randint(1, 15)
-        num_2 = random.randint(1, 10)
+        num_1 = random.randint(1, 11)
+        num_2 = random.randint(1, 11)
         mylist = ['+', '-', '*']
         operator = random.choice(mylist)
         add = num_1 + num_2
@@ -24,15 +24,18 @@ def get_result_of_calc():
         mul = num_1 * num_2
         print('Question: {} {} {}'.format(num_1, operator, num_2))
         ans = prompt.integer('Your answer: ')
-        if ans == add or ans == sub or ans == mul:
+        if ans == add and operator == '+':
+            print('Correct!')
+        elif ans == sub and operator == '-':
+            print('Correct!')
+        elif ans == mul and operator == '*':
             print('Correct!')
             i += 1
         else:
             if ans != add and operator == '+':
-                result = is_answer_incorrect(ans, add, name)
+                return is_answer_incorrect(ans, add, name)
             elif ans != sub and operator == '-':
-                result = is_answer_incorrect(ans, sub, name)
+                return is_answer_incorrect(ans, sub, name)
             elif ans != mul and operator == '*':
-                result = is_answer_incorrect(ans, mul, name)
-            return result
+                return is_answer_incorrect(ans, mul, name)
     congratulations(name)
