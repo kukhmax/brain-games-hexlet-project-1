@@ -1,5 +1,5 @@
 import prompt
-import numberom
+import random
 from brain_games.games.engine import welcome_user
 from brain_games.games.engine import is_answer_incorrect
 from brain_games.games.engine import congratulations
@@ -15,7 +15,7 @@ def is_even():
     while i <= 2:
         no = 'no'
         yes = 'yes'
-        number = numberom.numberint(1, 99)
+        number = random.randint(1, 99)
         print('Question: {}'.format(number))
         ans = prompt.string('Answer: ')
         if number % 2 == 0 and ans == 'yes' or number % 2 == 1 and ans == 'no':
