@@ -27,7 +27,7 @@ def progression(a, count, b, c):
     if c == 1:
         return ans
     else:
-        return result
+        return result[1:]
 
 
 def is_prime(a):
