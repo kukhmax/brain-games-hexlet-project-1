@@ -1,7 +1,7 @@
 import prompt
-import random
+import numberom
 from brain_games.games.engine import welcome_user
-from brain_games.games.engine import incor
+from brain_games.games.engine import is_answer_incorrect
 from brain_games.games.engine import congratulations
 
 
@@ -15,16 +15,16 @@ def is_even():
     while i <= 2:
         no = 'no'
         yes = 'yes'
-        rand = random.randint(1, 99)
-        print('Question: {}'.format(rand))
+        number = numberom.numberint(1, 99)
+        print('Question: {}'.format(number))
         ans = prompt.string('Answer: ')
-        if rand % 2 == 0 and ans == 'yes' or rand % 2 == 1 and ans == 'no':
+        if number % 2 == 0 and ans == 'yes' or number % 2 == 1 and ans == 'no':
             print('Correct!')
             i += 1
         else:
-            if rand % 2 == 0 and ans != 'yes':
-                wrong = incor(ans, yes, name)
-            elif rand % 2 == 1 and ans != 'no':
-                wrong = incor(ans, no, name)
+            if number % 2 == 0 and ans != 'yes':
+                wrong = is_answer_incorrect(ans, yes, name)
+            elif number % 2 == 1 and ans != 'no':
+                wrong = is_answer_incorrect(ans, no, name)
             return wrong
     congratulations(name)

@@ -3,12 +3,12 @@
 import prompt
 import random
 from brain_games.games.engine import welcome_user
-from brain_games.games.engine import prime
-from brain_games.games.engine import incor
+from brain_games.games.engine import is_prime
+from brain_games.games.engine import is_answer_incorrect
 from brain_games.games.engine import congratulations
 
 
-def is_prime():
+def is_number_prime():
     welcome_user()
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
@@ -27,8 +27,8 @@ def is_prime():
             n = 'no'
             y = 'yes'
             if ans != 'no' and cor_ans == 'no':
-                wrong = incor(ans, n, name)
+                wrong = is_answer_incorrect(ans, n, name)
             elif ans != 'yes' and cor_ans == 'yes':
-                wrong = incor(ans, y, name)
+                wrong = is_answer_incorrect(ans, y, name)
             return wrong
     congratulations(name)

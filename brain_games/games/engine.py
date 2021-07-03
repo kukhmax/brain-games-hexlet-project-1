@@ -30,7 +30,7 @@ def progression(a, count, b, c):
         return result
 
 
-def prime(a):
+def is_prime(a):
     i = 2
     if a < 2:
         return 'no'
@@ -43,7 +43,7 @@ def prime(a):
     return 'yes'
 
 
-def incor(a, b, c):
+def is_answer_incorrect(a, b, c):
     print("""'{}' is wrong answer ;(. Correct answer was '{}'.
 Let's try again, {}!""".format(a, b, c))
 

@@ -4,11 +4,11 @@ import prompt
 import random
 from brain_games.games.engine import is_gcd
 from brain_games.games.engine import welcome_user
-from brain_games.games.engine import incor
+from brain_games.games.engine import is_answer_incorrect
 from brain_games.games.engine import congratulations
 
 
-def gcd():
+def get_gcd():
     welcome_user()
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
@@ -25,6 +25,6 @@ def gcd():
             print('Correct!')
             i += 1
         elif ans != cor_ans:
-            unc = incor(ans, cor_ans, name)
+            unc = is_answer_incorrect(ans, cor_ans, name)
             return unc
     congratulations(name)

@@ -4,7 +4,7 @@ import prompt
 import random
 from brain_games.games.engine import welcome_user
 from brain_games.games.engine import progression
-from brain_games.games.engine import incor
+from brain_games.games.engine import is_answer_incorrect
 from brain_games.games.engine import congratulations
 
 
@@ -27,5 +27,5 @@ def get_missing_number_in_progression():
             print('Correct!')
             i += 1
         elif ans != cor_ans:
-            return incor(ans, cor_ans, name)
+            return is_answer_incorrect(ans, cor_ans, name)
     congratulations(name)
