@@ -3,8 +3,8 @@
 import prompt
 import random
 from brain_games.games.engine import welcome_user
-from brain_games.games.engine import is_answer_incorrect
 from brain_games.games.engine import congratulations
+from brain_games.games.engine import is_calc_answer_incorrect
 
 
 def get_result_of_calc():
@@ -26,16 +26,13 @@ def get_result_of_calc():
         ans = prompt.integer('Your answer: ')
         if ans == add and operator == '+':
             print('Correct!')
+            i += 1
         elif ans == sub and operator == '-':
             print('Correct!')
+            i += 1
         elif ans == mul and operator == '*':
             print('Correct!')
             i += 1
         else:
-            if ans != add and operator == '+':
-                return is_answer_incorrect(ans, add, name)
-            elif ans != sub and operator == '-':
-                return is_answer_incorrect(ans, sub, name)
-            elif ans != mul and operator == '*':
-                return is_answer_incorrect(ans, mul, name)
+            return is_calc_answer_incorrect(ans, add, sub, mul, operator, name)
     congratulations(name)

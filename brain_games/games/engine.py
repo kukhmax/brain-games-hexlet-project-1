@@ -43,6 +43,15 @@ def is_prime(a):
     return 'yes'
 
 
+def is_calc_answer_incorrect(ans, add, sub, mul, operator, name):
+    if ans != add and operator == '+':
+        return is_answer_incorrect(ans, add, name)
+    elif ans != sub and operator == '-':
+        return is_answer_incorrect(ans, sub, name)
+    elif ans != mul and operator == '*':
+        return is_answer_incorrect(ans, mul, name)
+
+
 def is_answer_incorrect(a, b, c):
     print("""'{}' is wrong answer ;(. Correct answer was '{}'.
 Let's try again, {}!""".format(a, b, c))
