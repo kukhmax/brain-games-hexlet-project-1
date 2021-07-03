@@ -23,7 +23,7 @@ def calc():
         sub = num_1 - num_2
         mul = num_1 * num_2
         print('Question: {} {} {}'.format(num_1, sing, num_2))
-        ans = prompt.real('Your answer: ')
+        ans = prompt.integer('Your answer: ')
         if ans == add or ans == sub or ans == mul:
             print('Correct!')
             i += 1
