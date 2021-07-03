@@ -4,7 +4,7 @@ from brain_games.games.cli_calc import get_result_of_calc
 
 
 def main():
-    cget_result_of_calc()
+    get_result_of_calc()
 
 
 if __name__ == '__main__':
