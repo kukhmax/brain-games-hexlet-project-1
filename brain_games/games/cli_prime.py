@@ -19,7 +19,7 @@ def is_number_prime():
         num = random.randint(1, 100)
         print('Question: {}'.format(num))
         ans = prompt.string('Your answer: ')
-        cor_ans = prime(num)
+        cor_ans = is_prime(num)
         if ans == 'yes' and cor_ans == 'yes' or ans == 'no' and cor_ans == 'no':
             print('Correct!')
             i += 1

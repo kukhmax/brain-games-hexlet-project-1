@@ -7,7 +7,7 @@ from brain_games.games.engine import is_answer_incorrect
 from brain_games.games.engine import congratulations
 
 
-def get_ result_of_calc():
+def get_result_of_calc():
     welcome_user()
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(name))
