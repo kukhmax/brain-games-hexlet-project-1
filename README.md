@@ -4,12 +4,12 @@
 [![Python CI](https://github.com/kukhmax/python-project-lvl1/actions/workflows/python-package.yml/badge.svg)](https://github.com/kukhmax/python-project-lvl1/actions/workflows/python-package.yml)
 
 
-[![asciicast](https://asciinema.org/a/kyt90WJImK7Fpgz6tRkqb10kf.svg)](https://asciinema.org/a/kyt90WJImK7Fpgz6tRkqb10kf)
+<script id="asciicast-423761" src="https://asciinema.org/a/423761.js" async></script>
 
-[![asciicast](https://asciinema.org/a/I27i6iA0bOvaGc7OSdZcFktoG.svg)](https://asciinema.org/a/I27i6iA0bOvaGc7OSdZcFktoG)
+<script id="asciicast-423763" src="https://asciinema.org/a/423763.js" async></script>
 
-[![asciicast](https://asciinema.org/a/49X6iRq6VnT1V1cciAe2U9jst.svg)](https://asciinema.org/a/49X6iRq6VnT1V1cciAe2U9jst)
+<script id="asciicast-423765" src="https://asciinema.org/a/423765.js" async></script>
 
-[![asciicast](https://asciinema.org/a/vdAffVZ9MPlqvfGmaVOuOQqMN.svg)](https://asciinema.org/a/vdAffVZ9MPlqvfGmaVOuOQqMN)
+<script id="asciicast-423766" src="https://asciinema.org/a/423766.js" async></script>
 
-[![asciicast](https://asciinema.org/a/z13LpHdbBO3YMiSrweutJ3qyH.svg)](https://asciinema.org/a/z13LpHdbBO3YMiSrweutJ3qyH)
+<script id="asciicast-423764" src="https://asciinema.org/a/423764.js" async></script>
