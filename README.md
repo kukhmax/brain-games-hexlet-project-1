@@ -4,12 +4,12 @@
 [![Python CI](https://github.com/kukhmax/python-project-lvl1/actions/workflows/python-package.yml/badge.svg)](https://github.com/kukhmax/python-project-lvl1/actions/workflows/python-package.yml)
 
 
-<script id="asciicast-423761" src="https://asciinema.org/a/423761.js" async></script>
+[![asciicast](https://asciinema.org/a/423761.svg)](https://asciinema.org/a/423761)
 
-<script id="asciicast-423763" src="https://asciinema.org/a/423763.js" async></script>
+[![asciicast](https://asciinema.org/a/423763.svg)](https://asciinema.org/a/423763)
 
-<script id="asciicast-423765" src="https://asciinema.org/a/423765.js" async></script>
+[![asciicast](https://asciinema.org/a/423765.svg)](https://asciinema.org/a/423765)
 
-<script id="asciicast-423766" src="https://asciinema.org/a/423766.js" async></script>
+[![asciicast](https://asciinema.org/a/423766.svg)](https://asciinema.org/a/423766)
 
-<script id="asciicast-423764" src="https://asciinema.org/a/423764.js" async></script>
+[![asciicast](https://asciinema.org/a/423764.svg)](https://asciinema.org/a/423764)
