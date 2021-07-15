@@ -1,36 +1,20 @@
 #!/usr/bin/env python3
 
 import random
-import prompt
 
 
-def print_description():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+FIRST, END = 1, 100
 
 
-def ask_question():
-    number = random.randint(1, 100)
-    question = 'Question: {}'.format(number)
-    return number, question
-
-
-def is_answer_correct(number):
+def get_question_and_correct_answer():
+    number = random.randint(FIRST, END)
     i = 2
     if number < 2:
-        return 'no'
+        return 'no', str(number)
     while i < number:
         if number % i != 0:
             i += 1
         else:
-            return 'no'
-    return 'yes'
-
-
-def get_answer():
-    return prompt.string('Your answer: ')
-
-
-def is_incorrect_answer(answer, name, number):
-    correct_answer = is_answer_correct(number)
-    return """'{}' is wrong answer ;(. Correct answer was '{}'.
-Let's try again, {}!""".format(answer, correct_answer, name)
+            return 'no', str(number)
+    return 'yes', str(number)

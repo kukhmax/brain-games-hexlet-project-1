@@ -1,45 +1,35 @@
 #!/usr/bin/env python3
 
-import prompt
 import random
 
 
-def print_description():
-    print('What number is missing in the progression?')
-
+DESCRIPTION = 'What number is missing in the progression?'
+FIRST, END = 1, 8
+DIF_FIRST, DIF_END = 0, 7
 
 def get_progression():
-    number_1 = random.randint(1, 9)
-    number_2 = random.randint(1, 9)
-    count = random.randint(2, 6)
+    number = random.randint(FIRST, END)
+    difference = random.randint(DIF_FIRST, DIF_END)
+    i = 0
+    result = [number]
+    while i <= END:
+        number += difference
+        result += [number]
+        i += 1
+    return result
+
+
+def get_question_and_correct_answer():
+    progression = get_progression()
+    empty_index = random.randint(FIRST, END)
     i = 0
     result = ''
-    while i <= 9:
-        number_1 += count
-        if i != number_2:
-            result += ' ' + str(number_1)
-        elif i == number_2:
-            correct_answer = number_1
+    while i < len(progression) - 1:
+        if i != empty_index:
+            result += ' ' + str(progression[i])
+            i += 1
+        elif i == empty_index:
+            skip_number = str(progression[i])
             result += ' ' + '..'
-        i += 1
-    return correct_answer, result[1:]
-
-
-def ask_question():
-    number, progression = get_progression()
-    question = 'Question: {}'.format(progression)
-    return number, question
-
-
-def is_answer_correct(number):
-    return number
-
-
-def get_answer():
-    return prompt.integer('Your answer: ')
-
-
-def is_incorrect_answer(answer, name, number):
-    correct_answer = is_answer_correct(number)
-    return """'{}' is wrong answer ;(. Correct answer was '{}'.
-Let's try again, {}!""".format(answer, correct_answer, name)
+            i += 1
+    return skip_number, result[1:]
