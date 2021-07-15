@@ -7,6 +7,7 @@ DESCRIPTION = 'What number is missing in the progression?'
 FIRST, END = 1, 8
 DIF_FIRST, DIF_END = 0, 7
 
+
 def get_progression():
     number = random.randint(FIRST, END)
     difference = random.randint(DIF_FIRST, DIF_END)
