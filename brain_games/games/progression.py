@@ -20,7 +20,7 @@ def get_progression():
     return result
 
 
-def get_stirng_progression(progression, hole_index):
+def get_answer(progression, hole_index):
     i = 0
     result = ''
     while i < len(progression) - 1:
@@ -37,5 +37,5 @@ def get_stirng_progression(progression, hole_index):
 def get_round():
     progression = get_progression()
     empty_index = random.randint(FIRST, END)
-    correct_answer, question = get_stirng_progression(progression, empty_index)
+    correct_answer, question = get_answer(progression, empty_index)
     return correct_answer, question

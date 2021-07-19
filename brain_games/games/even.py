@@ -14,14 +14,13 @@ def get_question():
 
 
 def is_even(number):
-    if number % 2 == 0:
-        result = 'yes'
-    else:
-        result = 'no'
-    return result
+    return False if number % 2 else True
 
 
 def get_round():
     number = get_question()
-    correct_answer = is_even(number)
+    if is_even(number):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
     return correct_answer, str(number)

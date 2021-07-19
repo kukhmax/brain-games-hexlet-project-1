@@ -15,19 +15,19 @@ def get_question():
 def is_prime(number):
     i = 2
     if number < 2:
-        correct_answer = 'no'
-        return correct_answer
+        return False
     while i < number:
         if number % i != 0:
             i += 1
         else:
-            correct_answer = 'no'
-            return correct_answer
-    correct_answer = 'yes'
-    return correct_answer
+            return False
+    return True
 
 
 def get_round():
     number = get_question()
-    correct_answer = is_prime(number)
+    if is_prime(number):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
     return correct_answer, str(number)

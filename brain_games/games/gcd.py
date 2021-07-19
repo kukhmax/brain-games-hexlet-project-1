@@ -13,7 +13,7 @@ def get_question():
     return number_1, number_2
 
 
-def is_gcd(number_1, number_2):
+def calculate_gcd(number_1, number_2):
     while number_1 != number_2:
         if number_1 > number_2:
             number_1 = number_1 - number_2
@@ -25,5 +25,5 @@ def is_gcd(number_1, number_2):
 def get_round():
     number_1, number_2 = get_question()
     question = str(number_1) + ' ' + str(number_2)
-    number_2 = is_gcd(number_1, number_2)
+    number_2 = calculate_gcd(number_1, number_2)
     return str(number_2), question
