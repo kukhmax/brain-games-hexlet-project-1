@@ -26,8 +26,5 @@ def is_prime(number):
 
 def get_round():
     number = get_question()
-    if is_prime(number):
-        correct_answer = 'yes'
-    else:
-        correct_answer = 'no'
+    correct_answer = 'yes' if is_prime(number) else 'no'
     return correct_answer, str(number)
