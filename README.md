@@ -7,7 +7,7 @@
 
 <h2>Quickstart</h2>
 
-<pre>pip install git+https://github.com/KMCH80/python-project-lvl1.git</pre>
+<pre>pip install git+https://github.com/kukhmax/python-project-lvl1.git</pre>
 
 <h2>Running commands</h2>
 
