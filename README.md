@@ -3,6 +3,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/kukhmax/python-project-lvl1/maintainability)
 [![Python CI](https://github.com/kukhmax/python-project-lvl1/actions/workflows/python-package.yml/badge.svg)](https://github.com/kukhmax/python-project-lvl1/actions/workflows/python-package.yml)
 
+
 <h1>Welcome to Brain Games!</h1>
 
 <h2>Quickstart</h2>
@@ -35,19 +36,15 @@
 <h3>brain_even</h3>
 
 [![asciicast](https://asciinema.org/a/423761.svg)](https://asciinema.org/a/423761)
-
 <h3>brain_calc</h3>
 
 [![asciicast](https://asciinema.org/a/423763.svg)](https://asciinema.org/a/423763)
-
 <h3>brain_gcd</h3>
 
 [![asciicast](https://asciinema.org/a/423765.svg)](https://asciinema.org/a/423765)
-
 <h3>brain_progression</h3>
 
 [![asciicast](https://asciinema.org/a/423766.svg)](https://asciinema.org/a/423766)
-
 <h3>brain_prime</h3>
 
 [![asciicast](https://asciinema.org/a/423764.svg)](https://asciinema.org/a/423764)
