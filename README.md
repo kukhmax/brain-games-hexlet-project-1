@@ -33,12 +33,21 @@
 <h2>Demo</h2>
 
 <h3>brain_even</h3>
+
 [![asciicast](https://asciinema.org/a/423761.svg)](https://asciinema.org/a/423761)
+
 <h3>brain_calc</h3>
+
 [![asciicast](https://asciinema.org/a/423763.svg)](https://asciinema.org/a/423763)
+
 <h3>brain_gcd</h3>
+
 [![asciicast](https://asciinema.org/a/423765.svg)](https://asciinema.org/a/423765)
+
 <h3>brain_progression</h3>
+
 [![asciicast](https://asciinema.org/a/423766.svg)](https://asciinema.org/a/423766)
+
 <h3>brain_prime</h3>
+
 [![asciicast](https://asciinema.org/a/423764.svg)](https://asciinema.org/a/423764)
